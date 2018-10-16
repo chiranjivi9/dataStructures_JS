@@ -83,6 +83,9 @@ class BST{
     }
     return false;
   }
+
+inOrder
+
 }
 
 const bst = new BST();
