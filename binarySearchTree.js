@@ -51,6 +51,21 @@ class BST{
       return searchTree(node);
     }
   }
+
+  findData(data) {
+    let current = root.data;
+    while (current.data !== data) {
+      if(data < current.data) {
+        current = current.left;
+      } else {
+        current = current.right;
+      }
+      if(current === null){
+        return null;
+      }
+    }
+    return current;
+  }
   // find the min value in the tree ie left most node
   findMin(){
     let current = this.root;
@@ -59,7 +74,7 @@ class BST{
     }
     return current.data;
   }
-//find the max value in the tree i.e the right most node
+  //find the max value in the tree i.e the right most node
   findMax(){
     let current = this.root;
     while(current.right !== null){
@@ -68,7 +83,7 @@ class BST{
     return current.data
   }
 
-  //
+  // Return true or fasle if data founf in the Tree
   isPresent(data){
     let current = this.root;
     while(current){
@@ -83,9 +98,6 @@ class BST{
     }
     return false;
   }
-
-inOrder
-
 }
 
 const bst = new BST();
@@ -100,5 +112,6 @@ bst.add(41);
 bst.add(2);
 console.log(bst.findMax());
 console.log(bst.findMin());
+// console.log(bst.findData());
 console.log(bst.isPresent(111));
 console.log(bst.isPresent(12));
