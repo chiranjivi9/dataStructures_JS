@@ -1,4 +1,5 @@
 let arr = [ 2, 4, 5, 6, 7, 10, 1, -2, 100, 0];
+console.log({Original_Array: arr})
 // sorting the array in ascending order
 let sorted = arr.sort(function(a,b){return(a-b)});
 function findMin(arr){
@@ -12,7 +13,8 @@ function findMin(arr){
   }
   return low
 }
+
+console.log({Sorted_Array: sorted})
 // javascript inbuilt function to find min & max
-console.log(Math.max(...sorted))
-console.log(sorted)
-console.log(findMin(arr))
+console.log({Max_Value: Math.max(...sorted)})
+console.log({Min_Value: findMin(arr)})
