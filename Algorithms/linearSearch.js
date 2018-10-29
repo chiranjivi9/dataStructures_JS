@@ -5,7 +5,7 @@ function linSearch(arr, value){
     return "Array too short with one or less element."
   } else {
     //iterate through the array and compare the value with each element.
-    for(let i = 0; i<arr.length; ++i){
+    for(let i = 0; i < arr.length; ++i){
       if(arr[i] === value){
         return (value + " " + "is in the array");
       }
