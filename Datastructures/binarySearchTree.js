@@ -2,7 +2,7 @@
 
 // create two classes
 // Node and BST
-class Node{
+class Node {
   constructor(data, left = null, right = null){
     this.data = data;
     this.left = left;
@@ -39,7 +39,7 @@ class BST{
         } else if (data > node.data){
           // if the data passed is > than the root node
           if(node.right === null){
-            node.right = new Node(data)
+            node.right = new Node(data);
             return;
           } else if (node.right!==null){
             return searchTree(node.right);
@@ -53,7 +53,7 @@ class BST{
   }
 
   findData(data) {
-    let current = root.data;
+    var current = root.data;
     while (current.data !== data) {
       if(data < current.data) {
         current = current.left;
@@ -68,24 +68,24 @@ class BST{
   }
   // find the min value in the tree ie left most node
   findMin(){
-    let current = this.root;
+    var current = this.root;
     while(current.left !== null){
-      current = current.left
+      current = current.left;
     }
     return current.data;
   }
   //find the max value in the tree i.e the right most node
   findMax(){
-    let current = this.root;
+    var current = this.root;
     while(current.right !== null){
       current = current.right;
     }
-    return current.data
+    return current.data;
   }
 
   // Return true or fasle if data founf in the Tree
   isPresent(data){
-    let current = this.root;
+    var current = this.root;
     while(current){
       if(data === current.data){
         return true;

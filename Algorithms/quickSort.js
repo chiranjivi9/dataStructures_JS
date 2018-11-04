@@ -2,7 +2,7 @@
 //   87,29,37,69,47,74,78,8,62,36,61,67,55,94,99,84,63,34,25,85,62,72,32,89,61,14,58,53,85,19,44,87,11,15,42,62,83,40,95,56,96,76,47,8,35,12,44,18,55,
 //   12,37,32,60]
 var element = [ 10, 2, 3, 41, 1, 4 ,6, 8, 9];
-console.log({unsorted_array: element})
+console.log({unsorted_array: element});
 function quickSort(element){
   //check if there are more than one elements in the array
   if(element.length < 1){
@@ -20,5 +20,5 @@ function quickSort(element){
   }
   return [].concat(quickSort(left), pivot, quickSort(right));
 }
-console.log("sorted_array:")
-console.log(quickSort(element))
+console.log("sorted_array:");
+console.log(quickSort(element));

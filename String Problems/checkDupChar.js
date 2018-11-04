@@ -7,8 +7,8 @@
 //
 // We will then sort it with Array.sort. After it has been sorted,
 // we will join it using Array.join. We can then make use of
-// the regex /(.)\1+/g which essentially means match a letter and subsequent
-// letters if it's the same.
+// the regex /(.)\1+/g which essentially means match a varter and subsequent
+// varters if it's the same.
 //
 // When we use String.match with the stated regex, we will get an Array,
 //  whose length is the answer. Also used some try...catch to return 0 in case
@@ -25,11 +25,11 @@ console.log(howManyRepeated("Indivisibilities")); // 2
 
 
 //Method #2
-let str = "Indivisibilities";
-let frequency = {};
+var str = "Indivisibilities";
+var frequency = {};
 
 function findFrequency(str){
-  let arr = str.toLowerCase();
+  var arr = str.toLowerCase();
   for (var i in arr){
     var char = arr.charAt(i);
     if(frequency[char]){
@@ -41,4 +41,4 @@ function findFrequency(str){
   return frequency;
 }
 
-console.log(findFrequency(str))
+console.log(findFrequency(str));

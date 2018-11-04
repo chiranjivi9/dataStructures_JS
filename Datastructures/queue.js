@@ -3,27 +3,27 @@ function queue(element){
   var collection = [];
   this.print = function(){
     console.log(collection);
-  }
+  };
   // add an element
   this.enqueue = function(element){
     collection.push(element);
-  }
+  };
   //remove an element
   this.dequeue = function(){
     return collection.shift();
-  }
+  };
   //return the 0th indexed element i.e the front of the queue
   this.front = function(){
     return collection[0];
-  }
+  };
   //return the length of the array
   this.size = function(){
     return collection.length;
-  }
+  };
   // check for empty queue
   this.isEmpty = function(){
     return (collection.length === 0);
-  }
+  };
 }
 
 var q = new queue();
@@ -42,14 +42,14 @@ console.log({
   Details: q.front()
 });
 
-console.log("Priority Queue below.")
+console.log("Priority Queue below.");
 // Priority Queue
 
 function pQueue(element){
   var arr = [];
   this.print = function(){
     console.log(arr);
-  }
+  };
   this.enqueue = function(element){
     if(this.isEmpty()){
       arr.push(element);
@@ -70,17 +70,17 @@ function pQueue(element){
 
   this.dequeue = function(){
     var value = arr.shift();
-    return value[0]
-  }
+    return value[0];
+  };
   this.front = function(){
     return arr[0];
-  }
+  };
   this.size = function(){
     return arr.length;
-  }
+  };
   this.isEmpty = function(){
     return (arr.length === 0);
-  }
+  };
 }
 
 var pq = new pQueue();

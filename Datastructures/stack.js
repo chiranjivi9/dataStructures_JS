@@ -6,7 +6,7 @@ var stack = function() {
   this.push = function(value){
     this.storage[this.count] = value; //pushing the value at count = 0 i.e index 0
     this.count++;
-  }
+  };
   // Remove and return the value at the end of the stack [pop()]
   this.pop = function(){
     if(this.count === 0){
@@ -16,19 +16,19 @@ var stack = function() {
     var result = this.storage[this.count];
     delete this.storage[this.count];
     return result;
-  }
+  };
   //size of the stack
   this.size = function(){
     return this.count;
-  }
+  };
   // Return the top element of the stack [peek()]
   this.peek = function(){
     //the top of the stack
     return this.storage[this.count-1];
     //count-1 because this will give us the latest entered element
     //i.e top position of the stack
-  }
-}
+  };
+};
 
 var myStack = new stack();
 myStack.push(1);

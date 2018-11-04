@@ -110,13 +110,13 @@ var odd = number.filter(isOdd);
   console.log({
     message : "Even",
     array : even
-  })
+  });
 
 
   console.log({
     message: "Odd",
     array: odd
-  })
+  });
 
 
 

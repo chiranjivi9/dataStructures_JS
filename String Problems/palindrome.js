@@ -18,7 +18,7 @@ for(var j = 0; j < word.length; j++){
 }
 console.log({
  user_input : word
-})
+});
 console.log({
   reverse_string : revWord
 });

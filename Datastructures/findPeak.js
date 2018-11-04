@@ -12,8 +12,8 @@
 // }
 
 for (var i = 0; i < 3; i++) {
-  setTimeout(function() { alert(i); }, 1000 + i);
+  setTimeout( function() { alert(i); }, 1000 + i);
 }
 
-var string = "It is a great day"
+var string = "It is a great day";
 console.log(string.substr(5));
