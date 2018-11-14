@@ -3,7 +3,7 @@ var str = "a sfhs dgdn sf dsf";
 
 function replace(str){
   // set an accumulator
-  var arr = "";
+  var arr = [];
   for (var i = 0; i < str.length; i++){
     //get the current character char at index i
     var char = str.charAt(i);
